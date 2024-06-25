@@ -93,6 +93,9 @@
         if (img.src.startsWith('https://www.msitec.com.br')) {
           img.src = img.src.replace('https://www.msitec.com.br', 'https://www.msitecnologia.com.br');
         }
+        if (img.src.includes('localiza%C3%A7%C3%A3o')) {
+            img.src = img.src.replace('localiza%C3%A7%C3%A3o', 'localizacao');
+        }
 
         img.src = img.src.replace('.html', '.png');
       });
